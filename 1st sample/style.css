@@ -1,6 +1,23 @@
 /* Somthing else */
-
 div{
-	outline: 1px dashed #411;
-	min-height:100px;
+	outline: 1px dashed #999;
+}
+
+.center {
+	text-align:center;
+}
+
+.header { 
+	min-height:150px;
+	line-height:150px;
+}
+ 
+.footer { 
+	min-height:180px;
+	line-height:180px;
+}
+
+.container div:nth-child(2) > div {
+	min-height:380px;	
+	padding-top:1em;
 }
