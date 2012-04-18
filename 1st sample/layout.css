@@ -1,4 +1,8 @@
 /* CSS Layout helper, base on http://github.com/1devs/blueprint-css */
+html, body {
+	width:100%;
+	height:100%;
+}
 
 /* A container should group all your columns. */
 .container {
@@ -44,6 +48,16 @@
 .w23 {width: 910px;}
 .w24 {width: 950px;}
 
+.f1 { font-size: 0.625em; /* 10px */}
+.f2 { font-size: 0.75em; /* 12px */}
+.f3 { font-size: 0.875em; /* 14px */}
+.f4 { font-size: 1em; /* 16px */}
+.f5 { font-size: 1.125em; /* 18px */}
+.f6 { font-size: 1.25em; /* 20px */}
+.f7 { font-size: 1.375em; /* 22px */}
+.f8 { font-size: 1.5em; /* 24px */}
+.f9 { font-size: 1.625em; /* 26px */}
+.f10 { font-size: 1.75em; /* 28px */}
 
 /* Use these classes to set the width of an input. */
 input.w1, textarea.w1, input.w2, textarea.w2, input.w3, textarea.w3, input.w4, textarea.w4, input.w5, textarea.w5, input.w6, textarea.w6, input.w7, textarea.w7, input.w8, textarea.w8, input.w9, textarea.w9, input.w10, textarea.w10, input.w11, textarea.w11, input.w12, textarea.w12, input.w13, textarea.w13, input.w14, textarea.w14, input.w15, textarea.w15, input.w16, textarea.w16, input.w17, textarea.w17, input.w18, textarea.w18, input.w19, textarea.w19, input.w20, textarea.w20, input.w21, textarea.w21, input.w22, textarea.w22, input.w23, textarea.w23, input.w24, textarea.w24 {
@@ -78,58 +92,68 @@ input.w23, textarea.w23 { width: 898px; }
 input.w24, textarea.w24 { width: 938px; }
 
 
-.mleft1 { margin-left: 40px; }
-.mleft2 { margin-left: 80px; }
-.mleft3 { margin-left: 120px; }
-.mleft4 { margin-left: 160px; }
-.mleft5 { margin-left: 200px; }
-.mleft6 { margin-left: 240px; }
-.mleft7 { margin-left: 280px; }
-.mleft8 { margin-left: 320px; }
-.mleft9 { margin-left: 360px; }
-.mleft10 { margin-left: 400px; }
-.mleft11 { margin-left: 440px; }
-.mleft12 { margin-left: 480px; }
-.mleft13 { margin-left: 520px; }
-.mleft14 { margin-left: 560px; }
-.mleft15 { margin-left: 600px; }
-.mleft16 { margin-left: 640px; }
-.mleft17 { margin-left: 680px; }
-.mleft18 { margin-left: 720px; }
-.mleft19 { margin-left: 760px; }
-.mleft20 { margin-left: 800px; }
-.mleft21 { margin-left: 840px; }
-.mleft22 { margin-left: 880px; }
-.mleft23 { margin-left: 920px; }
-.mleft24 { margin-left: 960px; }
-.mleftauto { margin-left: auto; }
+.ml1 { margin-left: 40px; }
+.ml2 { margin-left: 80px; }
+.ml3 { margin-left: 120px; }
+.ml4 { margin-left: 160px; }
+.ml5 { margin-left: 200px; }
+.ml6 { margin-left: 240px; }
+.ml7 { margin-left: 280px; }
+.ml8 { margin-left: 320px; }
+.ml9 { margin-left: 360px; }
+.ml10 { margin-left: 400px; }
+.ml11 { margin-left: 440px; }
+.ml12 { margin-left: 480px; }
+.ml13 { margin-left: 520px; }
+.ml14 { margin-left: 560px; }
+.ml15 { margin-left: 600px; }
+.ml16 { margin-left: 640px; }
+.ml17 { margin-left: 680px; }
+.ml18 { margin-left: 720px; }
+.ml19 { margin-left: 760px; }
+.ml20 { margin-left: 800px; }
+.ml21 { margin-left: 840px; }
+.ml22 { margin-left: 880px; }
+.ml23 { margin-left: 920px; }
+.ml24 { margin-left: 960px; }
+.mla { margin-left: auto; }
 
 
-.mright1 { margin-right: 40px; }
-.mright2 { margin-right: 80px; }
-.mright3 { margin-right: 120px; }
-.mright4 { margin-right: 160px; }
-.mright5 { margin-right: 200px; }
-.mright6 { margin-right: 240px; }
-.mright7 { margin-right: 280px; }
-.mright8 { margin-right: 320px; }
-.mright9 { margin-right: 360px; }
-.mright10 { margin-right: 400px; }
-.mright11 { margin-right: 440px; }
-.mright12 { margin-right: 480px; }
-.mright13 { margin-right: 520px; }
-.mright14 { margin-right: 560px; }
-.mright15 { margin-right: 600px; }
-.mright16 { margin-right: 640px; }
-.mright17 { margin-right: 680px; }
-.mright18 { margin-right: 720px; }
-.mright19 { margin-right: 760px; }
-.mright20 { margin-right: 800px; }
-.mright21 { margin-right: 840px; }
-.mright22 { margin-right: 880px; }
-.mright23 { margin-right: 920px; }
-.mright24 { margin-right: 960px; }
-.mrightauto { margin-right: auto; }
+.mr1 { margin-right: 40px; }
+.mr2 { margin-right: 80px; }
+.mr3 { margin-right: 120px; }
+.mr4 { margin-right: 160px; }
+.mr5 { margin-right: 200px; }
+.mr6 { margin-right: 240px; }
+.mr7 { margin-right: 280px; }
+.mr8 { margin-right: 320px; }
+.mr9 { margin-right: 360px; }
+.mr10 { margin-right: 400px; }
+.mr11 { margin-right: 440px; }
+.mr12 { margin-right: 480px; }
+.mr13 { margin-right: 520px; }
+.mr14 { margin-right: 560px; }
+.mr15 { margin-right: 600px; }
+.mr16 { margin-right: 640px; }
+.mr17 { margin-right: 680px; }
+.mr18 { margin-right: 720px; }
+.mr19 { margin-right: 760px; }
+.mr20 { margin-right: 800px; }
+.mr21 { margin-right: 840px; }
+.mr22 { margin-right: 880px; }
+.mr23 { margin-right: 920px; }
+.mr24 { margin-right: 960px; }
+.mra { margin-right: auto; }
+
+.mt1 { margin-top: 5px; }
+.mt1 { margin-top: 5px; }
+.mt1 { margin-top: 5px; }
+.mt1 { margin-top: 5px; }
+.mt1 { margin-top: 5px; }
+.mt1 { margin-top: 5px; }
+.mt1 { margin-top: 5px; }
+.mt1 { margin-top: 5px; }
+.mt1 { margin-top: 5px; }
 
 /* Add these to a column to append empty cols. */
 
