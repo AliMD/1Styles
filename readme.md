@@ -1,2 +1,2 @@
-# The One style
-### 1devs' css library
+# 1styles, Cascading Style Sheets Compound
+### A 1devs' CSS library
