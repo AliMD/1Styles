@@ -1,4 +1,6 @@
-/* 1styles CSS Layout helper, based on blueprintcss.org */
+/* 1styles CSS Layout helper by 1Devs, base on blueprintcss grid system */
+/* fork me : www.github.com/1devs/1styles */
+
 html, body {
 	width:100%;
 	height:100%;
@@ -10,7 +12,13 @@ html, body {
   margin: 0 auto;
 }
 
-.block:after {
+/*
+.cover {					/* IMPORTANT: Use this class at the beginning *//*
+	*width:inherit;			/* IE6-7 CSS Hack *//*
+	*display:inline-block;	/* IE6-7 CSS Hack *//*
+}
+*/
+.cover:after {				/* NOT Compatible with IE lte7 ! */
 	display:block;
 	content:"";
 	clear:both;
@@ -50,6 +58,7 @@ html, body {
 .f13 { font-size: 2.5em;	/* 40px */}
 .f14 { font-size: 3em;		/* 48px */}
 .f15 { font-size: 4em;		/* 64px */}
+.f16 { font-size: 5em;		/* 80px */}
 
 /* Use these classes to set the width of an input. */
 input.w1, textarea.w1, input.w2, textarea.w2, input.w3, textarea.w3, input.w4, textarea.w4, input.w5, textarea.w5, input.w6, textarea.w6, input.w7, textarea.w7, input.w8, textarea.w8, input.w9, textarea.w9, input.w10, textarea.w10, input.w11, textarea.w11, input.w12, textarea.w12, input.w13, textarea.w13, input.w14, textarea.w14, input.w15, textarea.w15, input.w16, textarea.w16, input.w17, textarea.w17, input.w18, textarea.w18, input.w19, textarea.w19, input.w20, textarea.w20, input.w21, textarea.w21, input.w22, textarea.w22, input.w23, textarea.w23, input.w24, textarea.w24 {
@@ -100,6 +109,7 @@ input.w24, textarea.w24 { width: 938px; }
 .mr21 { margin-right: 840px; }	.mr22 { margin-right: 880px; }	.mr23 { margin-right: 920px; }	.mr24 { margin-right: 960px; }
 .mra { margin-right: auto; }
 
+/* + TODO: RESEARCH!!!! */
 .mt1 { margin-top: 0.125em;	/* 2px */}
 .mt2 { margin-top: 0.25em;	/* 4px */}
 .mt3 { margin-top: 0.25em;	/* 6px */}
@@ -111,7 +121,7 @@ input.w24, textarea.w24 { width: 938px; }
 .mt9 { margin-top: 1.5em;	/* 24px */}
 .mt10 { margin-top: 1.75em;	/* 28px */}
 .mt11 { margin-top: 2em;	/* 32px */}
-.mt12 { margin-top: 2.5px;	/* 40px */}
+.mt12 { margin-top: 2.5em;	/* 40px */}
 
 .mb1 { margin-bottom: 0.125em;	/* 2px */}
 .mb2 { margin-bottom: 0.25em;	/* 4px */}
@@ -124,7 +134,8 @@ input.w24, textarea.w24 { width: 938px; }
 .mb9 { margin-bottom: 1.5em;	/* 24px */}
 .mb10 { margin-bottom: 1.75em;	/* 28px */}
 .mb11 { margin-bottom: 2em;		/* 32px */}
-.mb12 { margin-bottom: 2.5px;	/* 40px */}
+.mb12 { margin-bottom: 2.5em;	/* 40px */}
+/* - TODO: RESEARCH!!!! */
 
 /* Add these to a column to append empty cols. */
 

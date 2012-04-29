@@ -1,2 +1,4 @@
-# 1styles, Cascading Style Sheets Compound
+1styles CSS Layout helper
+=========================
 ### A 1devs' CSS library
+**based on blueprintcss grid system**
