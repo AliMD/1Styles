@@ -1,0 +1,36 @@
+/* A container should group all your columns. */
+.container
+	width 950px;
+	margin 0 auto;
+
+.left
+	float left
+
+.right
+	float right
+
+.zedloos
+	padding-top 1px
+	padding-bottom 1px
+
+/* same as add badboy child */
+.cover
+	&:before
+	&:after
+		content ""
+		display block
+		height 0
+	&:after
+		clear both
+
+.badboy
+	clear both
+	width 0 !important
+	height 0 !important
+	min-height 0 !important
+	min-width 0 !important
+	overflow hidden
+
+for i in 1..40
+	{'.f'+i}
+		font-size (i*2/16) em
