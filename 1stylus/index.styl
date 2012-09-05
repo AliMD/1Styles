@@ -1,0 +1,25 @@
+/* 
+ * Ali.MD - 1Stylus (1Styles for Stylus)
+ *
+ * 1Styles source code writed in Stylus.
+ * For more information about stylus visit ali.md/stylus
+ *
+ * http://ali.md/1styles
+ * Copyright (c) 2012 Ali Mihandoost under MIT License.
+ * fork me on github.
+ *
+ * Note: For use 1styles in stylus :
+ *	Copy 1stylus folder in your project and import it
+ *	in first of your .styl file befor other codes.
+ */
+
+
+page-width = 950
+grid-num = 24
+grid-margin = 10
+grid-width = (page-width + grid-margin) / grid-num - grid-margin
+
+/* @import 'reset' */
+
+@import 'layout_helper'
+@import 'grid'
