@@ -1,0 +1,75 @@
+
+/* Columns
+-------------------------------------------------------------- */
+
+grid(type,n,m=0)
+	sp = n*grid-width + n*grid-margin
+	sp -= m
+	{type} sp px
+
+w(n,m=grid-margin)
+	grid width n m
+
+ml(n)
+	grid margin-left n
+
+mr(n)
+	grid margin-right n
+
+pl(n)
+	grid padding-left n
+
+pr(n)
+	grid padding-right n
+
+grid-loop(i)
+	if i > 1
+		grid-loop(i - 1)
+
+	{'.w'+i}
+		w i
+		margin-right grid-margin px
+
+	{'input.w'+i+', textarea.w'+i}
+		w i 22 /* 10mr+5+5+2*1 = 22 */
+		border-width 1px;
+		padding-left 5px;
+		padding-right 5px;
+
+	{'.h'+i}
+		height i*grid-margin px
+
+	{'.mh'+i}
+		min-height i*grid-margin px
+
+	{'.ml'+i}
+		ml i
+
+	{'.mr'+i}
+		mr i
+
+	{'.mt'+i}
+		margin-top i*grid-margin px
+
+	{'.mb'+i}
+		margin-bottom i*grid-margin px
+
+	{'.pl'+i}
+		pl i
+
+	{'.pr'+i}
+		pr i
+
+	{'.pt'+i}
+		padding-top i*grid-margin px
+
+	{'.pb'+i}
+		padding-bottom i*grid-margin px
+
+grid-loop(grid-num - 1)
+
+{'.w' + grid-num}
+		w grid-num
+
+.last
+	margin-right 0
