@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>1styles simple layout example</title>
+<link type="text/css" rel="stylesheet" href="reset.css" />
+<link type="text/css" rel="stylesheet" href="1styles.css" />
+<link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+
+	<div class="w24 f16 center header">Header</div>
+	
+	<div class="cover w24 pt5 pb5">
+		<div class="w5 left center f8">Left</div>
+		<div class="w5 right last center f8">Right</div>
+		<div class="ml5 mr5 center f8">Center</div>
+		<!-- 
+			Using this depends on you!
+			".cover:after" doesn't work in less than or equal IE7
+			BUT:	".cover" class with	"display:inline-block" will expand ".cover" to cover its floated childs and
+										"width:inherit" will its set width to its parent.
+			NOTE:	".cover" class, has been already disabled in 1styles.css, if you are eager to enable that,
+					you won't need to use this line below.
+		 -->
+		<!-- [if lte IE 7]><div class="clear"></div><![endif]-->
+	</div>
+	
+	<div class="cover w24 f10 center footer">
+		<div class="w6 left">Sec #1</div>
+		<div class="w6 left">Sec #2</div>
+		<div class="w6 left">Sec #3</div>
+		<div class="ml18">Sec #4</div>
+		<!-- 
+			Using this depends on you!
+			".cover:after" doesn't work in less than or equal IE7
+			BUT:	".cover" class with	"display:inline-block" will expand ".cover" to cover its floated childs and
+										"width:inherit" will its set width to its parent.
+			NOTE:	".cover" class, has been already disabled in 1styles.css, if you are eager to enable that,
+					you won't need to use this line below.
+		 -->
+		<!-- [if lte IE 7]><div class="clear"></div><![endif]-->
+	</div>
+	
+</div>
+
+</body>
+</html>
