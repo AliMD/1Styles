@@ -1,75 +1,70 @@
 
-/* Columns
+/* Vertival Columns Grid
 -------------------------------------------------------------- */
 
-grid(type,n,m=0)
-	sp = n*grid-width + n*grid-margin
+gridw(type,n,m=0)
+	sp = n*grid_width + n*grid_margin
 	sp -= m
+	if sp < 0
+		sp = 0
 	{type} sp px
 
-w(n,m=grid-margin)
-	grid width n m
+w(n,m=grid_margin)
+	gridw width n m
 
-ml(n)
-	grid margin-left n
-
-mr(n)
-	grid margin-right n
-
-pl(n)
-	grid padding-left n
-
-pr(n)
-	grid padding-right n
-
-grid-loop(i)
-	if i > 1
-		grid-loop(i - 1)
-
+for i in 0..grid_num
 	{'.w'+i}
 		w i
-		margin-right grid-margin px
+		if i>0
+			margin-right grid_margin px
 
-	{'input.w'+i+', textarea.w'+i}
-		w i 22 /* 10mr+5+5+2*1 = 22 */
-		border-width 1px;
-		padding-left 5px;
-		padding-right 5px;
-
-	{'.h'+i}
-		height i*grid-margin px
-
-	{'.mh'+i}
-		min-height i*grid-margin px
+	if i>0
+		{'input.w'+i+', textarea.w'+i}
+			w i 22 /* 10mr+5+5+2*1 = 22 */
+			border-width 1px
+			padding-left 5px
+			padding-right 5px
 
 	{'.ml'+i}
-		ml i
+		gridw margin-left i
 
 	{'.mr'+i}
-		mr i
-
-	{'.mt'+i}
-		margin-top i*grid-margin px
-
-	{'.mb'+i}
-		margin-bottom i*grid-margin px
+		gridw margin-right i
 
 	{'.pl'+i}
-		pl i
+		gridw padding-left i
 
 	{'.pr'+i}
-		pr i
+		gridw padding-right i
 
-	{'.pt'+i}
-		padding-top i*grid-margin px
-
-	{'.pb'+i}
-		padding-bottom i*grid-margin px
-
-grid-loop(grid-num - 1)
-
-{'.w' + grid-num}
-		w grid-num
+.wx
+	width 9999px
 
 .last
 	margin-right 0
+
+
+/* Horizental Grid
+-------------------------------------------------- */
+
+gridh(type,n)
+	{type} n*10 px
+
+for i in 0..40
+	{'.h'+i}
+		gridh height i
+
+	{'.mh'+i}
+		gridh min-height i
+
+	{'.mt'+i}
+		gridh margin-top i
+
+	{'.mb'+i}
+		gridh margin-bottom i
+
+	{'.pt'+i}
+		gridh padding-top i
+
+	{'.pb'+i}
+		gridh padding-bottom i
