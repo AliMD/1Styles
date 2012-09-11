@@ -1,7 +1,8 @@
-/* A container should group all your columns. */
+
 .container
-	width 950px;
-	margin 0 auto;
+	// A container should group all your columns.
+	width 950px
+	margin 0 auto
 
 .left
 	float left
@@ -9,12 +10,9 @@
 .right
 	float right
 
-.zedloos
-	padding-top 1px
-	padding-bottom 1px
-
-/* same as add badboy child */
 .cover
+	// same as add badboy child
+	*zoom 1
 	&:before
 	&:after
 		content ""
@@ -31,6 +29,20 @@
 	min-width 0 !important
 	overflow hidden
 
+.zedloos
+	padding-top 1px
+	padding-bottom 1px
+
+.mla, .mlra
+	margin-left auto
+
+.mra, .mlra
+	margin-right auto
+
+.overhide
+	overflow hidden
+
+// fonts
 for i in 1..40
 	{'.f'+i}
 		font-size (i*2/16) em
