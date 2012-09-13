@@ -10,6 +10,15 @@
 .right
 	float right
 
+.rel, .relative
+	position relative
+
+.abs, .absolute
+	position absolute
+
+.fix, .fixed
+	position fixed
+
 .cover
 	// same as add badboy child
 	*zoom 1
@@ -23,10 +32,13 @@
 
 .badboy
 	clear both
+	display block
 	width 0 !important
 	height 0 !important
 	min-height 0 !important
 	min-width 0 !important
+	margin 0 !important
+	padding 0 !important
 	overflow hidden
 
 .zedloos
@@ -34,13 +46,16 @@
 	padding-bottom 1px
 
 .mla, .mlra
-	margin-left auto
+	margin-left auto !important
 
 .mra, .mlra
-	margin-right auto
+	margin-right auto !important
 
-.overhide
+.overhide, .overhidden
 	overflow hidden
+
+.overscrl, .overscroll
+	overflow scroll
 
 // fonts
 for i in 1..40

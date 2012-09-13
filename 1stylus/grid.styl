@@ -15,7 +15,7 @@ w(n,m=grid_margin)
 for i in 0..grid_num
 	{'.w'+i}
 		w i
-		if i>0
+		if i>0 && i<grid_num
 			margin-right grid_margin px
 
 	if i>0
@@ -41,7 +41,7 @@ for i in 0..grid_num
 	width 9999px
 
 .last
-	margin-right 0
+	margin-right 0 !important
 
 
 /* Horizental Grid
@@ -57,9 +57,6 @@ for i in 0..40
 	{'.mh'+i}
 		gridh min-height i
 
-	{'.lh'+i}
-		gridh line-height i
-
 	{'.mt'+i}
 		gridh margin-top i
 
@@ -71,3 +68,6 @@ for i in 0..40
 
 	{'.pb'+i}
 		gridh padding-bottom i
+
+	{'.lh'+i}
+		gridh line-height i
