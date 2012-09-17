@@ -1,4 +1,7 @@
 
+/* Base
+-------------------------------------------------- */
+
 .container
 	// A container should group all your columns.
 	width 950px
@@ -10,6 +13,15 @@
 .right
 	float right
 
+.mla, .mlra
+	margin-left auto !important
+
+.mra, .mlra
+	margin-right auto !important
+
+/* positions
+-------------------------------------------------- */
+
 .rel, .relative
 	position relative
 
@@ -19,14 +31,16 @@
 .fix, .fixed
 	position fixed
 
+/* Layout bugs fix
+-------------------------------------------------- */
+
 .cover
 	// same as add badboy child
-	*zoom 1 // for ie bug, * work in ie only
+	*zoom 1 // Fix bug for IE 6/7 only
 	&:before
 	&:after
-		content " "
-		// table for zedloos
-		display table
+		content " " // The space content is one way to avoid an Opera bug when the `contenteditable` attribute is included anywhere else in the document. Otherwise it causes space to appear at the top and bottom of elements that receive the `clearfix` class.
+		display table // zedloos: The use of `table` rather than `block` is only necessary if using `:before` to contain the top-margins of child elements.
 	&:after
 		clear both
 
@@ -45,19 +59,71 @@
 	padding-top 1px
 	padding-bottom 1px
 
-.mla, .mlra
-	margin-left auto !important
-
-.mra, .mlra
-	margin-right auto !important
-
 .overhide, .overhidden
 	overflow hidden
 
 .overscrl, .overscroll
 	overflow scroll
 
-// fonts
+.ir
+	// Image replacement
+	background-color transparent
+	border 0
+	overflow hidden
+	/* IE 6/7 fallback */
+	*text-indent: -9999px
+
+.ir:before
+	content ""
+	display block
+	width 0
+	height 100%
+
+
+/* Hidden
+-------------------------------------------------- */
+
+.hidden
+	// Hide from both screenreaders and browsers
+	display none !important
+	visibility hidden
+
+.visuallyhidden
+	// Hide only visually, but have it available for screenreaders.
+	border 0
+	clip rect(0 0 0 0)
+	height 1px
+	margin -1px
+	overflow hidden
+	padding 0
+	position absolute
+	width 1px
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus
+	clip auto
+	height auto
+	margin 0
+	overflow visible
+	position static
+	width auto
+
+.invisible
+	visibility hidde
+
+/* Chrome Frame prompt
+-------------------------------------------------- */
+
+.chromeframe {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+/* Font Sizes
+-------------------------------------------------- */
+
 for i in 1..40
 	{'.f'+i}
 		font-size (i*2/16) em
