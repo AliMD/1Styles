@@ -3,6 +3,8 @@
 
 For more information visit my *Css Pages Layout* tutorial ([ali.md/cpl](http://ali.md/cpl)).
 
+**Download Latest Version** : [ali.md/1styles.css](http://ali.md/1styles.css)
+
 ###Contributing
 
 * Check files and report any bugs or ideas in [issues](https://github.com/AliMD/1styles/issues)
