@@ -1,5 +1,5 @@
 /* 
- * Ali.MD - 1Styles
+ * Ali.MD - 1Stylus v2.0 (1Styles for Stylus)
  *
  * 1Styles source code writed in Stylus.
  * For more information about stylus visit ali.md/stylus
@@ -8,9 +8,48 @@
  * Copyright (c) 2012 Ali Mihandoost under MIT License.
  * fork me on github.
  *
- * Note: For use 1styles in stylus :
- *	Copy 1stylus folder in your project and import it
- *	in first of your .styl file befor other codes.
+ * Note, For compile it to css :
+ * Download node.js installer (ali.md/node.js) and install it
+ * Install stylus by run this command: npm install stylus -g
+ * And compile style.styl to style.css by run this command (in this project folder): stylus --compress 1styles.styl
+ * 
+*/
+
+{'/* 
+ * Ali.MD - 1Styles v2.0
+ * http://ali.md/1styles
+ * Copyright (c) 2012 Ali Mihandoost under MIT License.
+ * fork me on github.
  */
 
-@import '1stylus'
+@charset "UTF-8"
+
+span'}
+	color inherit
+
+// Grid config
+page_width	= 950
+grid_num	= 24
+grid_margin	= 10
+grid_width	= (page_width + grid_margin) / grid_num - grid_margin
+
+@import '1stylus/nib'
+
+@media all
+
+	@import '1stylus/1reset' // optional
+
+	@import '1stylus/layout_helper'
+
+	@import '1stylus/texts'
+
+	@import '1stylus/grid'
+
+	@import '1stylus/fontsize'
+
+	// @import 'your other files'
+
+@media print
+
+	@import '1stylus/print'
+
