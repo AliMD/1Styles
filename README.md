@@ -1,5 +1,5 @@
-## 1Styles v2.0
-1Styles is a revolutionary css library for html,css layout page with a grid system.  
+## 1Styles v3.0
+1Styles is a simple but professional css library. Contain [1Reset](http://alimd.github.io/1Reset), [1Grids](http://alimd.github.io/1Grids), [1Helper](http://alimd.github.io/1Helper)  
 
 ### Feature
 * Responsive
@@ -20,7 +20,7 @@
 #### Public cdn.  
 For use on production websites with **any amount of traffic**. Files are served via [MaxCDN](http://www.maxcdn.com/)'s super fast global CDN.  
 ```html
-<link href="http://cdn.rawgit.com/AliMD/1Styles/v2.0.1/dist/1styles.css" type="text/css" rel="stylesheet" />
+<link href="http://cdn.rawgit.com/AliMD/1Styles/v3.0.0-beta/dist/1styles.css" type="text/css" rel="stylesheet" />
 ```
 
 For **dev/testing** latest version with **low-traffic** use the following link. Please **don't** use it on production websites.  
