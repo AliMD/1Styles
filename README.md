@@ -1,5 +1,5 @@
 ## 1Styles v3.0
-1Styles is a simple but professional css library. Contain [1Reset](http://alimd.github.io/1Reset), [1Grids](http://alimd.github.io/1Grids), [1Helper](http://alimd.github.io/1Helper)  
+1Styles is a simple but professional CSS page layout framework Contain [1Reset](http://alimd.github.io/1Reset), [1Grids](http://alimd.github.io/1Grids), [1Helper](http://alimd.github.io/1Helper)  
 
 ### Feature
 * Responsive
